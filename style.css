@@ -1,12 +1,45 @@
 /* geral*/
-html {
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-bory {
-    margin: 0;
+#logo {
+    width: 100px;
+    height: 100px;
 }
 
+#menu ul {
+    list-style: none;
+    padding: 0;
+    background-color: rgb(107, 111, 114);
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    color: #FFF;
+    padding: 20px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background .4s;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(146, 37, 10);
+}
+
+#titulo {
+    padding: 20px;
+    float: right;
+}
+
+/*
 h1, h2, h3, h4, h5, p, span {
     margin: 0;
     color: #666;
@@ -17,7 +50,7 @@ h1, h2, h3, h4, h5, p, span {
     width: 100%;
 }
 
-/* header */
+/* header 
 header {
     position: relative;
     top: 0;
@@ -25,7 +58,7 @@ header {
     width: 100%;
 }
 
-/*navbar */
+/*navbar 
 nav {
     position: fixed;
     top: 0;
@@ -36,7 +69,7 @@ nav {
     border-bottom: 1px solid #CCC;
 }
 
-nav:after {
+nav::after {
     clear: both;
     content: "";
     display: block;
@@ -77,3 +110,4 @@ nav:after {
 .nav-container li a:houver {
     color: #3381F3;
 }
+*/

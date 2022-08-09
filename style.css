@@ -7,6 +7,7 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+/* margin: 0 auto; */
 
 #menu ul {
     position: fixed;
@@ -70,7 +71,7 @@
 /* seção de Serviços*/
 #lastjobs-container {
     text-align: center;
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .wrapper {
@@ -86,9 +87,9 @@
 }
 
 #lastjobs-container ul {
-    padding: 0;
+    padding: 0px;
     border: 1px solid #CCC;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 #lastjobs-container ul li {
@@ -116,11 +117,11 @@
     display: inline-block;
     width: 50%;
     position: relative;
-    padding-left: 1%;
+    padding-left: 2%;
 }
 
 .company-box img {
-    width: 100px;
+    width: 80px;
     margin-top: 2.5px;
 }
 
@@ -140,6 +141,118 @@
 .company-info p {
     font-weight: bold;
 }
+
+.locality {
+    color: #6d6d6d;
+    display: inline-block;
+    width: 25%;
+    position: absolute;
+    height: 100%;
+    line-height: 80px;
+}
+
+.locality i, .locality p {
+    display: inline-block;
+}
+
+.locality i {
+    margin-right: 5px;
+}
+
+/* company job type */
+.job-type {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    padding-top: 30px;
+    right: 1%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.job-type span {
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    color: #FFF;
+}
+
+.clt {
+    background-color: #735fee;
+}
+
+.pj {
+    background-color: #5BBC2E;
+}
+
+.homeoffice {
+    background-color: #FF5a5F;
+}
+
+.btn-jobs {
+    text-transform: uppercase;
+    background-color: #FFF;
+    color: #3381F3;
+    border: 2px solid #3381F3;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: 0,5s:
+}
+
+.btn-jobs:hover {
+    background-color: #3381F3;
+    color: #FFF;
+}
+
+/* send jobs container */
+#sendjobs-container {
+    background: url(imgs/banner3.jpg) no-repeat;
+    background-size: cover;
+    background-position: 0 25%;
+    padding: 15em 0;
+}
+
+#sendjobs-container h2, #sendjobs-container p {
+    width: 600px;
+    color: rgb(29, 24, 24);
+}
+
+#sendjobs-container h2 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#sendjobs-container p {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.ligth-btn {
+    background-color: #FFF;
+    border: 2px solid #FFF;
+    color: #666;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.ligth-btn:hover {
+    background-color: transparent;
+    color: #FFF;
+}
+
+
+
 /* MENU FIXED 
 
  .formacao{background-image:url("imgs/")}

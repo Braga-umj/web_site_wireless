@@ -1,20 +1,50 @@
 /* geral*/
-
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+html { 
     font-family: 'Open Sans', sans-serif;
 }
 
-/* margin: 0 auto; */
+body {
+    margin: 0;
+}
 
-#menu ul {
+h1, h2, h3, h4, h5, p, span {
+    margin: 0;
+    color: #666;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+}
+
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+nav {
     position: fixed;
     top: 0;
-    height: 80px;
+    height: 100px;
     width: 100%;
     z-index: 1;
+    background-color: #666;
+    border-bottom: 1px solid #CCC;
+}
+
+nav::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.nav-container {
+    max-width: 1200px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #logo {
@@ -22,31 +52,27 @@
     height: 80px;
 }
 
-#menu {
-    background-color: rgb(107, 111, 114);
-}
-
-#menu ul {
-    max-width: 800px;
-    list-style: none;
-    padding: 0;
-}
-
-#menu ul li {
-    display: inline;
-}
-
-#menu ul li a {
-    color: #FFF;
-    padding: 20px;
-    text-decoration: none;
-    display: inline-block;
-    transition: background .4s;
+.nav-container ul {
     float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
 }
 
-#menu ul li a:hover {
-    background-color: rgb(146, 37, 10);
+.nav-container li {
+    list-style: none;
+    float: left;
+    transition: 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    transition: .5s;
+}
+
+.nav-container li a:hover {
+    color: #3381F3;
 }
 
 /* banner */
@@ -66,6 +92,38 @@
     padding-top: 15em;
     padding-bottom: 15em;
     text-align: center;
+}
+
+#search-form h1 {
+    font-size: 40px;
+}
+
+#search-form p {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#search-form input, #search-form select {
+    background-color: #FFF;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+#search-form input[type=submit] {
+    background-color: #3381F3;
+    text-transform: uppercase;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#search-form input[type=submit]:hover {
+    background-color: #2B79EB;
 }
 
 /* seção de Serviços*/
@@ -251,195 +309,49 @@
     color: #FFF;
 }
 
+/* jobfinder status */
 
-
-/* MENU FIXED 
-
- .formacao{background-image:url("imgs/")}
-
-    .foto-perfil, .logo-perfil{
-        position:absolute;
-        height:200px; width:200px; float:left;
-        margin-left:-100px; left:50%;
-        background-repeat:no-repeat;
-        background-color:transparent;
-        background-size:cover;
-        border-radius:50%}
-    .foto-perfil{background-image:url("imgs/")}
-    .logo-perfil{background-image:url("imgs/")}
-    
-    .top100{padding-top:100px}
-    .top100px{margin-top:100px; margin-bottom:60px;}
-
-    .home, .home:hover{
-        height:59px; width:190px; float:left;
-        margin-top:5px; margin-left:38px;
-        background-image:url("imgs/manchinha-logo-menu.png");
-        background-repeat:no-repeat;
-        background-color:transparent;
-        background-size:cover}
-
-    .foto-perfil .home{position:fixed; background-position: -50% 0}
-    .home:hover{position:fixed; background-position:-50% 100%}
-
-    .menu-bar, .menu-index{
-        position: fixed;
-        _position: absolute;
-        _top: expression(body.scrollTop + document.body.clientHeight - 35 + "px");
-        height:72px; width:100%;
-        margin-top:0; padding:0; top:0;
-        float:left;
-        display:block;
-        z-index:900;
-        background-color:#fff}
-
-    .lista, .lista-2{
-        position:absolute;
-        width: 100%}
-    .lista{display:block;}
-    .lista-2{display:none}
-
-    .menu-index ul {
-        position:relative;
-        width:100%;
-        list-style-type:none;
-        overflow:hidden;
-        float:left;
-        left:50%;
-        background-color:transparent}
-
-    .menu-bar ul {
-        position:fixed;
-        width:auto;
-        list-style-type:none;
-        overflow:hidden;
-        top:0; float:right;
-        margin:22px 38px 0 0;
-        right:0;
-        background-color:transparent}
-
-    .menu-bar li, .menu-bar li a:hover,
-    .menu-index li, .menu-index li a:hover {
-        float:left; list-style:none}
-
-    .menu-bar a.bt-on, .menu-bar a.bt-on:hover {
-        color:#fff;
-        border:1px #fff solid;
-        border-radius: 4px;
-        background-color:#00AEEF;
-        border:1px #00AEEF solid}
-
-    .menu-bar li a, .menu-index li a {
-        font:12px 'Roboto', sans-serif;
-        letter-spacing:0.5px;
-        display: block;
-        margin:0 4px 0 4px; padding:0;
-        text-decoration:none}
-
-    .menu-bar li a{padding-bottom:28px}
-    .menu-bar li a:hover{padding-bottom:22px}
-
-    .menu-index li a{padding:0}
-    .menu-index li a:hover{padding:0; color:#000}
-
-    .menu-bar li a, .menu-index li a {
-        color:#fff}
-
-    .menu-bar li a:hover{
-        color:#46bdf4;
-        transition:0.5s}
-
-    .menu-bar a.bt-on, .menu-bar a.bt-on:hover,
-    .menu-bar li a, .menu-bar li a:hover{padding: 4px 5px;}
-
-
-    .card{
-        width:29%;
-        margin:0;
-        padding: 0;
-        display: inline-block}
-
-    .card-2{
-        width:20%; height:auto;
-        margin:0;  padding:0;
-        display:table-cell;}
-
-    .familia{
-        background-image:url("imgs/vc-background-03.jpg");
-        background-repeat:no-repeat;
-        background-color:transparent;
-        background-size:cover}
-
-
-/*
-h1, h2, h3, h4, h5, p, span {
-    margin: 0;
-    color: #666;
+#status-container {
+    text-align: center;
+    padding: 5em 0;
 }
 
-.container {
-    max-width: 1920px;
-    width: 100%;
+.title-center {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-/* header 
-header {
+.p-center {
+    width: 80%;
     position: relative;
-    top: 0;
-    height: auto;
-    width: 100%;
-}
-
-/*navbar 
-nav {
-    position: fixed;
-    top: 0;
-    height: 100px;
-    width: 100%;
-    z-index: 1;
-    background-color: #FFF;
-    border-bottom: 1px solid #CCC;
-}
-
-nav::after {
-    clear: both;
-    content: "";
-    display: block;
-}
-
-.nav-container {
-    max-width: 1200px;
-    position: relative;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
 }
 
-#logo {
-    width: 50px;
-    height: 50px;
-    margin-top: 25px;
-}
-
-.nav-container ul {
-    float: right;
+.status-box {
+    display: inline-block;
+    text-align: center;
+    width: 24.5%;
+    margin-top: 80px;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
     height: 100px;
-    line-height: 100px;
-    margin: 0;
 }
 
-.nav-container li {
-    list-style: none;
-    float: left;
-    transition: 0 15px;
+.status-box:nth-child(2) {
+    border: none;
 }
 
-.nav-container li a {
-    text-decoration: none;
-    color: #666;
-    transition: .5s;
+.status-box:nth-child(3) {
+    border-right: none;
 }
 
-.nav-container li a:houver {
-    color: #3381F3;
+.status-qtd {
+    font-size: 36px;
 }
-*/
+
+.status-text {
+    font-size: 20px;
+}

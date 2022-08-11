@@ -49,7 +49,13 @@ nav::after {
 
 #logo {
     width: 80px;
-    height: 80px;
+    height: 100px;
+}
+
+#logo-w {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
 }
 
 .nav-container ul {
@@ -63,6 +69,7 @@ nav::after {
     list-style: none;
     float: left;
     transition: 0 15px;
+    padding: 10px;
 }
 
 .nav-container li a {
@@ -72,7 +79,7 @@ nav::after {
 }
 
 .nav-container li a:hover {
-    color: #3381F3;
+    color: #f34033;
 }
 
 /* banner */
@@ -441,8 +448,9 @@ nav::after {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
-
+   
 .article-box h4 {
     font-size: 24px;
     margin-bottom: 15px:
@@ -459,8 +467,8 @@ nav::after {
 }
 
 .article-btn {
-    background-color: #3381F3;
-    border-color: #3381F3;
+    background-color: #f34033;
+    border-color: #f34033;
     color: #FFF;
 }
 

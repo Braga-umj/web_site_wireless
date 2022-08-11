@@ -480,9 +480,9 @@ nav::after {
 /* footer */
 footer {
     background-color: #666;
-    padding-top: 5em;
+    padding-top: 1em;
     padding-bottom: 40px;
-    border-top: 5px solid #3381F3;
+    border-top: 5px solid #030958;
 }
 
 footer h2, footer p, footer a, footer span {
@@ -490,7 +490,7 @@ footer h2, footer p, footer a, footer span {
 }
 
 footer h2 {
-    font-weight: 400;
+    font-weight: 100;
 }
 
 footer a {
@@ -503,6 +503,9 @@ footer ul {
 
 footer li {
     list-style: none;
+    float: left;
+    transition: 0 15px;
+    padding: 10px;
 }
 
 .footer-box {
@@ -518,7 +521,7 @@ footer .wrapper::after {
 }
 
 .company-footer {
-    width: 80%;
+    width: 100%;
 }
 
 .company-footer h2 {
@@ -538,7 +541,7 @@ footer .wrapper::after {
 }
 
 .footer-list a:hover {
-    color: #FFF;
+    color: #f34033;
 }
 
 .footer-list li::after {
@@ -562,17 +565,11 @@ footer .wrapper::after {
     float: left;
 }
 
-.footer-list li span {
-    float: left;
-    height: 30px;
-    line-height: 30px;
-}
-
 .footer-bottom {
-    border-top: 1px solid #B2B2B2;
+    border-top: 1px solid #030958;
 }
 
 .footer-bottom p {
-    font-weight: 600;
-    margin-top: 40px;
+    font-weight: 300;
+    margin-top: 20px;
 }
